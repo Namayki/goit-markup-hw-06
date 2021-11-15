@@ -271,7 +271,7 @@
 
     .hero-btn:hover, 
     .hero-btn:focus {
-        background-color:var(--btn-hero-color);
+        background-color: var(--secondary-accent-color);
     }
     
     /* --------------- items --------------- */
@@ -749,10 +749,11 @@
     /* --------------- footer form --------------- */
 
     .footer-form-container {
-        display: flex;     
+        display: flex; 
+        
     }
 
-    .footer-form {
+    .footer-form-field {
         font-size: 16px;
         line-height: 1.25px;
         letter-spacing: 0.03em;
@@ -766,6 +767,21 @@
         border-radius: 4px;
     }
 
+
+
+    .footer-form-input {
+        background-color: var(--background-origin);    
+    }
+
+
+
+
+    .footer-form-wrapper {
+        display: flex;
+        width: 200px;
+       
+    }
+
     .footer-form-button {
         font-weight: bold;
         font-size: 16px;
@@ -773,11 +789,32 @@
         letter-spacing: 0.06em;
         align-items: center;
         text-align: center;
+   
         color: var(--title-color);
         background-color: var(--accent-color);
-        width: 200px;
+        width: 100%;
         height: 50px;
         border-radius: 4px;
+        
+    }
+
+    .footer-form-btn {
+   
+        align-items: center;
+        justify-content: center;
+
+    }
+
+        .footer-form-icon {
+        margin-left: 10px;
+   
+      
+     
+    }
+
+    .footer-icon-send {
+        position: absolute;
+
     }
 
     /* --------------- modal ---------- */
