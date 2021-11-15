@@ -717,6 +717,7 @@
 
     .social-container {
           display: block;
+          margin-right: 93px;
     
     }
 
@@ -743,6 +744,40 @@
 
     .social-link-dark {
         background-color:rgba(255, 255, 255, .1);
+    }
+
+    /* --------------- footer form --------------- */
+
+    .footer-form-container {
+        display: flex;     
+    }
+
+    .footer-form {
+        font-size: 16px;
+        line-height: 1.25px;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        margin-right: 12px;
+        color: var(--footer-contacts);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+
+    .footer-form-button {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        align-items: center;
+        text-align: center;
+        color: var(--title-color);
+        background-color: var(--accent-color);
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
     }
 
     /* --------------- modal ---------- */
