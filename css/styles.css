@@ -13,13 +13,80 @@
 --footer-form-color: rgba(255, 255, 255, 0.3);
 --modal-form-message: rgba(117, 117, 117, 0.5);
 --modal-border-color: 1px solid rgba(33, 33, 33, 0.2);
+--linear-gradient: rgba(47, 48, 58, 0.4);
+--typography-thumb-background-color:rgba(47, 48, 58, 0.4);
+--what-we-do-background-color: rgba(47, 48, 58, 0.8);
+--social-link-dark-background-color:rgba(255, 255, 255, .1);
+--backdrop-background-color:rgba(0, 0, 0, 0.1);
+--footer-form-input-filter-drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
---animation-transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
---animation-transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
---animation-transition-background-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
---animation-transition-border-color: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--team-box-shadow-color:  0px 1px 3px rgba(0, 0, 0, 0.12), 
+                         0px 1px 1px rgba(0, 0, 0, 0.14),
+                         0px 2px 1px rgba(0, 0, 0, 0.2);
+--btn-portfolio-box-shadow-color: 
+        0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+--projects-link-box-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.25);
+--modal-button-box-shadow-color: 0px 4px 4px 0px #00000026; 
+--modal-box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+       
+
+
+--transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-box-shadow-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-transform-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-opacity: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition-visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 --border-radius: 4px;
+
+--modal-btn-close-border: 1px solid #0000001A;
+
+font-size: 26px;
+line-height: 1.19;
+
+font-size: 14px;
+line-height: 1.7px;
+
+font-size: 12px;
+line-height: 1.16;
+
+font-size: 16px;
+line-height: 1.87;
+
+font-size: 14px; 
+line-height: 1.14;
+
+font-size: 44px;
+line-height: 1.36;
+
+font-size: 14px;
+line-height: 1.71;
+
+font-size: 36px;
+line-height: 1.16;
+
+font-size: 16px;
+line-height: 1.19x;
+
+font-size: 16px;
+line-height: 1.63;
+
+font-size: 14px;
+line-height: 1.7px;
+
+   font-size: 20px;
+        line-height: 1.15;
+ 
+        font-size: 12px;
+        line-height: 1.16;
 
 }
 
@@ -195,8 +262,7 @@ html {
         font-weight: 500;
         letter-spacing: 0.02em;
         color: var(--header-color);
-        transition: color 250ms 
-        cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-color);
         position: relative;
     }
 
@@ -227,7 +293,7 @@ html {
         align-items: center;
         font-weight: 500;
         color: var(--second-header-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-color);
     }
     
     .header-connect-link:hover, 
@@ -241,11 +307,8 @@ html {
         padding-top: 200px;
         padding-bottom: 200px;
         background-color: var(--background-origin);
-        background-image: linear-gradient(
-         rgba(47, 48, 58, 0.4),
-         rgba(47, 48, 58, 0.4)
-         ),
-         url(../images/img-hero.jpg);
+        background-image: var(--linear-gradient),
+        url(../images/img-hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -289,8 +352,8 @@ html {
         background-color:var(--accent-color);
         border-radius: 4px;
         margin: 0 auto;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-border-color),
+        var(--transition-color);
     }
 
     .hero-btn:hover, 
@@ -368,7 +431,7 @@ html {
     .typography-item-thumb {
         display: flex;
         position: relative;
-        background-color:rgba(47, 48, 58, 0.4);
+        ;
     }
 
 
@@ -380,7 +443,7 @@ html {
         padding-top: 27px;
         padding-bottom: 27px;
         position: absolute;
-        background-color: rgba(47, 48, 58, 0.8);
+        background-color: var(--typography-thumb-background-color);
          bottom: 0;
     }
 
@@ -410,7 +473,7 @@ html {
     bottom: 0;
     width: 100%;
     height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: var(--what-we-do-background-color);
 }
 
     .typography-title,
@@ -449,10 +512,7 @@ html {
 
     .team-item {
         background-color: var(--title-color);
-        box-shadow: 
-        0px 1px 3px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--team-box-shadow-color);
     }
 
     .team-item-title {
@@ -486,7 +546,7 @@ html {
 
     .social-icon {
         fill:var(--icon-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-fill);
     }
 
     .social-link {
@@ -497,7 +557,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-background-color);
     }
 
     .social-link:hover,
@@ -541,8 +601,8 @@ html {
         border: 1px solid var(--icon-color);
         border-radius: 4px;
         color: var(--icon-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-color),
+        var(--transition-border-color);
     }
 
     .clients-link:hover,
@@ -589,19 +649,16 @@ html {
         letter-spacing: 0.03em;
         color: var(--header-color);
         border-radius: 4px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-background-color),
+        var(--transition-color),
+        var(--transition-box-shadow-color);
     }
 
     .btn-portfolio:hover, 
     .btn-portfolio:focus {
         color: var(--title-color);
         background-color: var(--accent-color);
-        box-shadow: 
-        0px 3px 1px rgba(0, 0, 0, 0.1), 
-        0px 1px 2px rgba(0, 0, 0, 0.08), 
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+        box-shadow: var(--btn-portfolio-box-shadow-color);
 
     }
 
@@ -629,8 +686,7 @@ html {
         display: block;
         cursor: pointer;
         position: relative;
-        transition: 
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+        transition: var(--transition-background-color);  
     }
 
     .projects-item-wrap {
@@ -640,9 +696,7 @@ html {
 
     .projects-link:hover,
     .projects-link:focus {
-        box-shadow:
-        0px 4px 4px rgba(0, 0, 0, 0.25);
-        transform: translate(0);
+        box-shadow: var(--projects-link-box-shadow);
      }
 
     .projects-description {
@@ -791,7 +845,7 @@ html {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: var(--background-origin);
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+        transition: var(--transition-border-color);   
     }
 
     .footer-form-input:focus {
@@ -824,19 +878,17 @@ html {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:rgba(0, 0, 0, 0.1);
+        background-color: var(--backdrop-background-color);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        transition: 
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-opacity),
+        var(--transition-visibility);
     }
 
     .backdrop .is-hidden .modal {
         transform: rotate(180deg);
-        transition: transform 250ms 
-        cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-transform-color);
     }
 
     .modal {
@@ -844,10 +896,7 @@ html {
         width: 528px;
         min-height: 581px;
         background-color: var(--title-color);
-        box-shadow: 
-        0px 1px 3px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px rgba(0, 0, 0, 0.14), 
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--modal-box-shadow);
         border-radius: 4px;
         top: 50%;
         left: 50%;
@@ -868,8 +917,7 @@ html {
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        transition: transform 250ms 
-        cubic-bezier(0.4, 0, 0.2, 1);
+        transition: var(--transition-transform-color);
     }
 
     .modal-btn-close:hover,
@@ -915,7 +963,7 @@ html {
 
     .modal-form-wrapper {
         position: relative;
-        display: block
+        display: block;
         margin-top: 6px;
     }
 
@@ -926,8 +974,8 @@ html {
         margin-top: 4px;
         border: var(--modal-border-color); 
         border-radius: 4px;
-        color:rgba(0, 0, 0, 0.2);
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--header-color);
+        transition: var(--transition-border-color);
     }
 
     .modal-form-input:focus {
@@ -962,8 +1010,8 @@ html {
         padding: 12px 16px ;
         margin-bottom: 20px;
         border-radius: 4px;
-        color:var(--modal-border-color)
-        transition border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color:var(--modal-border-color);
+        transition: var(--transition-border-color);
     }
 
     .modal-form-message::placeholder {
@@ -980,7 +1028,7 @@ html {
 
 
 
-     
+
 
     .modal-form-checkbox-label {
         display: flex;
@@ -998,39 +1046,54 @@ html {
         width: 16px;
         height: 15px;
         margin-right: 6px;
-        border: 1px solid var(--second-header-color);
+        border: 2px solid var(--header-color);
+        border-radius: 2px;
         cursor: pointer;
     }
 
     .modal-form-checkbox:checked + 
     .modal-form-checkbox-label::before {
-        background-color:var(--accent-color);
-        box-shadow: inset 0 0 0 4px #FFFFFF;
+        /* background-color:var(--accent-color);
+        box-shadow: inset 0 0 0 4px #FFFFFF; */
     }
 
     .modal-form-checkbox:focus + 
     .modal-form-checkbox-label::before {
-        outline: 2px solid var(--accent-color);
+        outline: 4px solid var(--accent-color);
     }
 
     .modal-accept-policy {
         color: var(--accent-color);
+        position: relative;
     }
 
+    .modal-accept-policy::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: -6px;
+        left: 0;
+        border-radius: 2px;
+        display: block;
+        background-color: var(--accent-color);
+        position: absolute;
+    }
+
+
+    
     .modal-form-button {
         cursor: pointer;
         width:200px;
         height: 50px;
         font-weight: bold;
-       
         letter-spacing: 0.06em;     
         margin: 0 auto;
         color:var(--title-color);
         background-color:var(--accent-color);
         border-radius: 4px;
-        box-shadow: 0px 4px 4px 0px #00000026;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--modal-form-button-box-shadow);
+        transition: var(--transition-background-color),
+        var(--transition-color);
     }
 
     .modal-form-button:hover,
@@ -1041,8 +1104,17 @@ html {
 
 
 
-
-
+/* url images
+   padding-top: 200px;
+        padding-bottom: 200px;
+        background-color: var(--background-origin);
+        background-image: var(--linear-gradient),
+        url(../images/img-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1600px;
+        margin: 0 auto; */
 
     
 
