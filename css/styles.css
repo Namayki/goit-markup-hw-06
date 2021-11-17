@@ -1009,11 +1009,6 @@ html {
         background-origin: border-box;
     }     
 
-    /* .modal-form-checkbox:focus + 
-    .modal-form-checkbox-label::before {
-        outline: 2px solid var(--accent-color);
-    } */
-
     .modal-accept-policy {
         color: var(--accent-color);
         position: relative;
