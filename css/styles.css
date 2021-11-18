@@ -258,8 +258,8 @@ html {
         padding-top: 200px;
         padding-bottom: 200px;
         background-color: var(--background-origin-color);
-        background-image: linear-gradient var(--linear-gradient-color),
-        var(--linear-gradient-color),
+        background-image: linear-gradient(var(--linear-gradient-color),
+        var(--linear-gradient-color)),
         url(../images/img-hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -572,7 +572,9 @@ html {
 
     .portfolio {
         padding-top: 94px;
+        padding-right: 15px;
         padding-bottom: 94px;
+        padding-left: 15px;
     }
 
     /* --------------- btn-portfolio -------------- */
@@ -748,7 +750,7 @@ html {
 
     .social-container {
         display: block;
-        margin-right: 93px;
+        /* margin-right: 93px; */
     
     }
 
@@ -780,6 +782,12 @@ html {
     /* --------------- footer form --------------- */
 
     .footer-form-container {
+        display: flex;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .form-container {
         display: flex; 
         align-items: center;
     }
