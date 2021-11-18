@@ -187,11 +187,6 @@ html {
         margin-left: auto;
     }
     
-    .envelope-icon,
-    .tel-icon {
-        fill: currentColor;
-        margin-right: 10px;
-    }
 
     /* --------------- nav --------------- */
 
@@ -237,6 +232,12 @@ html {
     .menu-link:hover, 
     .menu-link:focus {
         color: var(--accent-color);
+    }
+
+    .envelope-icon,
+    .tel-icon {
+        fill: currentColor;
+        margin-right: 10px;
     }
     
     .header-connect-link {
@@ -800,7 +801,7 @@ html {
         border-color: var(--accent-color);
     }
 
-    .footer-form-btn {
+    .footer-btn {
         display: flex;
         align-items: center;
         font-weight: bold;
@@ -1025,7 +1026,7 @@ html {
 
      /* -------------- modal button --------------- */
 
-    .modal-form-btn {
+    .modal-btn {
         cursor: pointer;
         width:200px;
         height: 50px;
@@ -1040,7 +1041,7 @@ html {
         color var(--transition);
     }
 
-    .modal-form-btn:hover,
-    .modal-form-btn:focus {
+    .modal-btn:hover,
+    .modal-btn:focus {
         background-color: var(--secondary-accent-color);
     }
