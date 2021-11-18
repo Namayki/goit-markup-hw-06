@@ -3,7 +3,7 @@
 --second-header-color: #757575;
 --title-color: #FFFFFF;
 --accent-color: #2196F3;
---secondary-accent-color:#188CE8;
+--secondary-accent-color: #188CE8;
 --background-origin-color: #2F303A;
 --header-logo-dark-color: #000000;
 --background-team-color: #F5F4FA;
@@ -16,8 +16,8 @@
 --modal-form-message-color: rgba(117, 117, 117, 0.5);
 --modal-border-color: rgba(33, 33, 33, 0.2);
 --linear-gradient-color: rgba(47, 48, 58, 0.4);
---what-we-do-background-color: rgba(47, 48, 58, 0.8);
---social-link-dark-background-color: rgba(255, 255, 255, .1);
+--what-we-do-color: rgba(47, 48, 58, 0.8);
+--social-link-dark-color: rgba(255, 255, 255, .1);
 --backdrop-color: rgba(0, 0, 0, 0.1);
 --projects-description-color: rgba(33, 150, 243, 0.9);
 --footer-contacts-color: rgba(255, 255, 255, 0.6);
@@ -213,7 +213,7 @@ html {
         font-weight: 500;
         letter-spacing: 0.02em;
         color: var(--header-color);
-        transition: color (var(--transition));
+        transition: color var(--transition);
         position: relative;
     }
 
@@ -221,7 +221,7 @@ html {
         content: "";
         width: 100%;
         height: 4px;
-        bottom: -32px;
+        bottom: -33px;
         left: 0;
         border-radius: 2px;
         display: block;
@@ -244,7 +244,7 @@ html {
         align-items: center;
         font-weight: 500;
         color: var(--second-header-color);
-        transition: color (var(--transition));
+        transition: color var(--transition);
     }
     
     .header-connect-link:hover, 
@@ -258,8 +258,8 @@ html {
         padding-top: 200px;
         padding-bottom: 200px;
         background-color: var(--background-origin-color);
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
+        background-image: linear-gradient var(--linear-gradient-color),
+        var(--linear-gradient-color),
         url(../images/img-hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -304,8 +304,8 @@ html {
         background-color:var(--accent-color);
         border-radius: 4px;
         margin: 0 auto;
-        transition: border-color (var(--transition)),
-        color (var(--transition));
+        transition: background-color var(--transition),
+        color var(--transition);
     }
 
     .hero-btn:hover, 
@@ -383,7 +383,7 @@ html {
     .typography-item-thumb {
         display: flex;
         position: relative;
-        ;
+        background-color: var(--linear-gradient-color);
     }
 
 
@@ -395,7 +395,7 @@ html {
         padding-top: 27px;
         padding-bottom: 27px;
         position: absolute;
-        background-color: var(--linear-gradient-color);
+        background-color: var(--what-we-do-color);
         bottom: 0;
     }
 
@@ -425,7 +425,7 @@ html {
     bottom: 0;
     width: 100%;
     height: 70px;
-    background-color: var(--what-we-do-background-color);
+    background-color: var(--what-we-do-color);
 }
 
     .typography-title,
@@ -497,29 +497,29 @@ html {
     }
 
     .social-icon {
-        fill:var(--icon-color);
-        transition: fill (var(--transition));
+        fill: var(--icon-color);
+        transition: fill var(--transition);
     }
 
     .social-link {
         width: 100%;
         height: 100%;
-        background-color:var(--title-color);
+        background-color: var(--title-color);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: background-color (var(--transition));
+        transition: background-color var(--transition);
     }
 
     .social-link:hover,
     .social-link:focus {
-        background-color:var(--accent-color);
+        background-color: var(--accent-color);
     }
 
     .social-link:hover .social-icon,
     .social-link:focus .social-icon {
-        fill:var(--title-color);
+        fill: var(--title-color);
     }
 
     /* --------------- our clients --------------- */
@@ -553,14 +553,14 @@ html {
         border: 1px solid var(--icon-color);
         border-radius: 4px;
         color: var(--icon-color);
-        transition: color (var(--transition)),
-        border-color (var(--transition));
+        transition: color var(--transition),
+        border-color var(--transition);
     }
 
     .clients-link:hover,
     .clients-link:focus {
         border-color: var(--accent-color);
-        color:var(--accent-color);
+        color: var(--accent-color);
    
     }
 
@@ -731,12 +731,12 @@ html {
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: var(--title-color);
-        transition: color (var(--transition)); 
+        transition: color var(--transition); 
     }
     
     .footer-address-link:hover,
     .footer-address-link:focus {
-        color:var(--accent-color);        
+        color: var(--accent-color);        
     }
     
     .footer-e-mail, 
@@ -758,7 +758,7 @@ html {
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color:var(--title-color);
+        color: var(--title-color);
         margin-bottom: 20px;
         display: block;
     }
@@ -774,7 +774,7 @@ html {
 
 
     .social-link-dark {
-        background-color:var(--social-link-dark-background-color);
+        background-color: var(--social-link-dark-color);
     }
 
     /* --------------- footer form --------------- */
@@ -784,21 +784,26 @@ html {
         align-items: center;
     }
 
+    .footer-form {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
     .footer-form-input {
         font-size: 16px;
-        line-height: 1.25px;
+        line-height: 1.25;
         letter-spacing: 0.03em;
         height: 50px;
         width: 358px;
         align-items: center;
         padding-left: 16px;
         margin-right: 12px;
-        color: var(--footer-form-color);
+        color: var(--title-color);
         border: 1px solid var(--footer-form-color);
         filter: drop-shadow 0px 4px 4px var(--footer-form-filter-color);
         border-radius: 4px;
         background-color: var(--background-origin-color);
-        transition: border (var(--transition));   
+        transition: border var(--transition);   
     }
 
     .footer-form-input:focus {
@@ -835,8 +840,8 @@ html {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        transition: opacity (var(--transition)),
-        visibility (var(--transition));
+        transition: opacity var(--transition),
+        visibility var(--transition);
     }
 
     .backdrop .is-hidden .modal {
@@ -870,7 +875,7 @@ html {
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        transition: transform-color (var(--transition));
+        transition: transform-color var(--transition);
     }
 
     .modal-btn-close:hover,
@@ -926,7 +931,7 @@ html {
         border: 1px solid var(--modal-border-color); 
         border-radius: 4px;
         color: var(--header-color);
-        transition: border-color (var(--transition));
+        transition: border-color var(--transition);
     }
 
     .modal-form-input:focus {
@@ -942,7 +947,7 @@ html {
         transform: translateY(-50%);
         display: block;
         width: 18px;
-        transition: animation (var(--transition));
+        transition: animation var(--transition);
     }
 
     .modal-form-input:focus + .modal-form-icon {
@@ -958,7 +963,7 @@ html {
         margin-bottom: 20px;
         border-radius: 4px;
         color: var(--modal-border-color);
-        transition: border-color (var(--transition));
+        transition: border-color var(--transition);
     }
 
     .modal-form-message::placeholder {
@@ -1003,7 +1008,7 @@ html {
     .modal-form-checkbox:checked + 
     .modal-form-checkbox-label::before {
         border-color: var(--accent-color);
-        background-color:var(--accent-color);
+        background-color: var(--accent-color);
         background-image: url(../images/icon-check.svg);
         background-size: contain;
         background-origin: border-box;
@@ -1037,11 +1042,11 @@ html {
         background-color:var(--accent-color);
         border-radius: 4px;
         box-shadow: 0px 4px 4px 0px var(--modal-button-shadow-color);
-        transition: background-color (var(--transition)),
-        color (var(--transition));
+        transition: background-color var(--transition),
+        color var(--transition);
     }
 
     .modal-form-button:hover,
     .modal-form-button:focus {
-        background-color:var(--secondary-accent-color) ;
+        background-color: var(--secondary-accent-color);
     }
