@@ -828,7 +828,6 @@ html {
         pointer-events: auto;
         transition: opacity var(--transition),
         visibility var(--transition);
-        animatio
     }
 
     .backdrop .is-hidden .modal {
