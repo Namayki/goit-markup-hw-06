@@ -11,6 +11,7 @@
 --modal-btn-color: #0000001A;
 --modal-button-shadow-color: #00000026;
 --projects-border-color:#EEEEEE;
+--header-border-color: #ECECEC;
 
 --projects-shadow-color: rgba(0, 0, 0, 0.25);
 --modal-form-message-color: rgba(117, 117, 117, 0.5);
@@ -171,7 +172,7 @@ html {
     /* --------------- header ---------------*/
 
     .header {
-        border-bottom: 1px solid #E5E5E5;
+        border-bottom: 1px solid var(--header-border-color);
         padding-top: 24px;
         padding-bottom: 25px;
     }
@@ -181,7 +182,7 @@ html {
         align-items: center;
     }
 
-    .header-connect-menu {
+    .header-contacts {
         display: flex;
         align-items: center;
         margin-left: auto;
@@ -224,9 +225,12 @@ html {
         position: absolute;
     }
 
-    .menu-item:not(:last-child),
-    .header-connect-item:not(:last-child) {
+    .menu-item:not(:last-child) {
         margin-right: 50px;
+    }
+
+    .header-contacts-item:not(:last-child) {
+        margin-right: 30px;
     }
     
     .menu-link:hover, 
@@ -240,7 +244,7 @@ html {
         margin-right: 10px;
     }
     
-    .header-connect-link {
+    .header-contacts-link {
         display: flex;
         align-items: center;
         font-weight: 500;
@@ -248,8 +252,8 @@ html {
         transition: color var(--transition);
     }
     
-    .header-connect-link:hover, 
-    .header-connect-link:focus {
+    .header-contacts-link:hover, 
+    .header-contacts-link:focus {
         color: var(--accent-color);
     }
     
