@@ -341,7 +341,7 @@ html {
         width: 270px;
     }
 
-    .icon-feature {
+    .feature-icon-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -351,6 +351,8 @@ html {
         border-radius: 4px;
         margin-bottom: 30px;
     }
+
+    .feature-icon
 
     .feature-title {
         font-style: normal;
@@ -675,7 +677,7 @@ html {
         color: var(--second-header-color);
     }
     
-     /* --------------- footer --------------- */
+     /* --------------- footer navigation --------------- */
     
     .footer {
         background-color: var(--background-origin-color);
@@ -689,9 +691,13 @@ html {
         justify-content: space-between;
     }
 
+    .footer-nav
+
     /* .footer-nav {
         margin-right: 70px;
     } */
+
+     /* --------------- footer address ---------------  */
 
     .footer-address {
         font-style: normal;
@@ -704,8 +710,6 @@ html {
     .footer-address-connect:not(:last-child) {
         margin-bottom: 9px;
     }
-    
-    /* --------------- footer address ---------------  */
     
     .footer-address-link {
         display: block;
@@ -723,19 +727,21 @@ html {
         color: var(--accent-color);        
     }
     
-    .footer-e-mail, 
-    .footer-tel {
+    .footer-address-e-mail, 
+    .footer-address-tel {
         color: var(--footer-contacts-color);
     }
 
-    /* -------------- footer social-nav ---------------- */
+    /* -------------- footer social navigation ---------------- */
 
-    /* .social-container {
+    /* .footer-social-container {
         margin-left: 0;
         margin-right: auto;
     } */
 
-    .social-title {
+ 
+
+    .footer-title {
         font-weight: bold;
         font-size: 14px;
         line-height: 1.14;
@@ -748,16 +754,15 @@ html {
 
     .social-nav {
         display: flex;
+
     }
-
-
-    .social-icon-white {
-        fill: var(--title-color);
-    }
-
 
     .social-link-dark {
         background-color: var(--social-link-dark-color);
+    }
+
+    .social-icon-white {
+        fill: var(--title-color);
     }
 
     /* --------------- footer form --------------- */
@@ -766,14 +771,14 @@ html {
         display: flex;
     }
 
-    .form-container {
-        display: flex; 
-        align-items: center;
-    }
-
     .footer-form {
         padding-right: 0;
         margin-right: 0;
+    }
+
+    .footer-form-wrapper {
+        display: flex; 
+        align-items: center;
     }
 
     .footer-label {
@@ -801,7 +806,7 @@ html {
         border-color: var(--accent-color);
     }
 
-    .footer-btn {
+    .footer-form-btn {
         display: flex;
         align-items: center;
         font-weight: bold;
